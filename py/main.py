@@ -6,13 +6,13 @@ from js import Date
 # ---------- Catalog (sample prices in pesos) ----------
 # id, brand, name, scent family, notes, bottle color, price 50 ml, price 100 ml
 PERFUMES = [
-    ("sauvage", "Dior", "Sauvage", "spicy", "Bergamot, pepper and ambroxan. Fresh with a spicy edge.", "#3f6f9a", 6200, 8500),
-    ("bleu", "Chanel", "Bleu de Chanel", "woody", "Citrus, incense and cedar. Smooth and classic.", "#2c4f8a", 6900, 9500),
+    ("sauvage", "Dior", "Sauvage", "spicy", "Bergamot, pepper and ambroxan. Fresh with a spicy edge.", "#3f6f9a", 6200, 21000),
+    ("bleu", "Chanel", "Bleu de Chanel", "woody", "Citrus, incense and cedar. Smooth and classic.", "#2c4f8a", 6900, 31000),
     ("eros", "Versace", "Eros", "sweet", "Mint, green apple and vanilla. Loud and sweet.", "#2f8f9a", 4000, 5500),
     ("million", "Paco Rabanne", "1 Million", "sweet", "Blood orange, cinnamon and leather. Warm and showy.", "#c0902f", 3800, 5200),
-    ("acqua", "Giorgio Armani", "Acqua di Giò", "fresh", "Sea notes, citrus and rosemary. Clean for daily wear.", "#5a9fb5", 4200, 5800),
-    ("aventus", "Creed", "Aventus", "woody", "Pineapple, birch and musk. A smoky fruity classic.", "#6a6f78", 14500, 22000),
-    ("ysl-y", "Yves Saint Laurent", "Y", "fresh", "Apple, ginger and cedar. Sharp and modern.", "#3a5a8a", 4600, 6300),
+    ("acqua", "Giorgio Armani", "Acqua di Giò", "fresh", "Sea notes, citrus and rosemary. Clean for daily wear.", "#5a9fb5", 4200, 39000),
+    ("aventus", "Creed", "Aventus", "woody", "Pineapple, birch and musk. A smoky fruity classic.", "#6a6f78", 14500, 29000),
+    ("ysl-y", "Yves Saint Laurent", "Y", "fresh", "Apple, ginger and cedar. Sharp and modern.", "#3a5a8a", 4600, 36999),
     ("lemale", "Jean Paul Gaultier", "Le Male", "aromatic", "Lavender, mint and vanilla. Cool and creamy.", "#4a5d9a", 4300, 6000),
     ("prada", "Prada", "L'Homme", "aromatic", "Neroli, iris and amber. Soft, powdery and tidy.", "#8a8f9a", 4500, 6200),
     ("oudwood", "Tom Ford", "Oud Wood", "woody", "Oud, rosewood and cardamom. Rich and dark.", "#6b4a2a", 13500, 19500),
