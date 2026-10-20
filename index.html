@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Savant | Authentic Designer Perfume for Men</title>
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pyscript.net/releases/2025.8.1/core.css">
+<script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="topbar">100% original perfumes &middot; Free delivery on orders over &#8369;5,000 &middot; Cash on delivery or GCash</div>
+<div class="meander"></div>
+<header>
+  <div class="wrap hrow">
+    <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <a class="brand" href="#home">
+      <!-- Logo lives at assets/logo.png -->
+      <img id="main-logo" src="assets/logo.png" alt="Savant" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span class="wordmark">Savant</span>
+    </a>
+    <form id="hform"><input id="hsearch" placeholder="Search perfume or brand" aria-label="Search"><button type="submit">Search</button></form>
+    <a class="acct" id="acct" href="#login">Login</a>
+    <a class="cartlink" href="#cart" data-nav="cart">Cart <span id="count">0</span></a>
+  </div>
+  <nav class="mainnav" id="mainnav"><div class="navrow">
+    <a href="#home" data-nav="home">Home</a>
+    <a href="#shop" data-nav="shop" data-family="all">Men's Fragrance</a>
+    <div class="menu" id="menu">
+      <button id="brands-btn" type="button">Brands &#9662;</button>
+      <div class="mega"><div class="wrap"><div class="cols" id="mega-cols"></div></div></div>
+    </div>
+    <a href="#best">Best Sellers</a>
+    <a href="#reviews">Customer Reviews</a>
+    <a href="#about">About</a>
+  </div></nav>
+</header>
+
+<!-- HOME VIEW -->
+<main id="view-home">
+<section class="hero"><div class="wrap">
+  <div>
+    <h1>Authentic designer perfume for men.</h1>
+    <p>Shop the brands you already know, from fresh daily scents to dark evening bottles. Check out online and pay on delivery or by GCash.</p>
+    <a class="btn gold" href="#shop" data-family="all">Shop men's fragrance</a>
+    <a class="btn ghost" href="#best">See best sellers</a>
+  </div>
+  <div class="video">
+    <!-- Put the advertisement video at assets/ad.mp4 -->
+    <video controls preload="metadata" playsinline><source src="assets/ad.mp4" type="video/mp4">Your browser can't play this video.</video>
+  </div>
+</div></section>
+<div class="meander"></div>
+
+<div class="wrap perks">
+  <div><b>Fast, free delivery</b>Free over &#8369;5,000. Metro Cebu orders usually arrive in a few days.</div>
+  <div><b>Friendly support</b>Message us Monday to Friday, 9am to 5pm.</div>
+  <div><b>Secure payments</b>Cash on delivery or GCash, your choice.</div>
+</div>
+
+<section class="sec" id="best-sec"><div class="wrap">
+  <div class="railhead"><h2>Best Sellers</h2><a href="#shop" data-family="all">View all</a></div>
+  <div class="rail"><button class="rbtn prev" aria-label="Previous">&#8249;</button><div class="track" id="best"></div><button class="rbtn next" aria-label="Next">&#8250;</button></div>
+</div></section>
+<section class="sec" ><div class="wrap">
+  <div class="railhead"><h2>New Arrivals</h2><a href="#shop" data-family="all">View all</a></div>
+  <div class="rail"><button class="rbtn prev" aria-label="Previous">&#8249;</button><div class="track" id="newin"></div><button class="rbtn next" aria-label="Next">&#8250;</button></div>
+</div></section>
+<section class="sec" ><div class="wrap">
+  <div class="railhead"><h2>Under &#8369;6,000</h2><a href="#shop" data-family="all">View all</a></div>
+  <div class="rail"><button class="rbtn prev" aria-label="Previous">&#8249;</button><div class="track" id="budget"></div><button class="rbtn next" aria-label="Next">&#8250;</button></div>
+</div></section>
+
+<section class="sec" id="brands" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap">
+  <h2>Shop by brand</h2>
+  <p class="lede">Pick a brand to see its perfumes in the shop.</p>
+  <div class="tiles" id="brand-tiles"></div>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <h2>Shop by scent</h2>
+  <p class="lede">Not sure where to start? Pick the kind of scent you like.</p>
+  <div class="tiles">
+    <a class="tile" href="#shop" data-family="fresh"><span>Fresh<small>Clean and light</small></span></a>
+    <a class="tile" href="#shop" data-family="woody"><span>Woody<small>Deep and classic</small></span></a>
+    <a class="tile" href="#shop" data-family="spicy"><span>Spicy<small>Warm and confident</small></span></a>
+    <a class="tile" href="#shop" data-family="sweet"><span>Sweet<small>Vanilla and mint</small></span></a>
+    <a class="tile" href="#shop" data-family="aromatic"><span>Aromatic<small>Lavender and herbs</small></span></a>
+  </div>
+</div></section>
+
+<section class="sec" id="reviews" style="background:#fff;border-top:1px solid var(--line)"><div class="wrap">
+  <h2>Let customers speak for us</h2>
+  <p class="lede">What buyers say about their orders.</p>
+  <div class="reviews"><div class="rev"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><b>Arrived sealed in 3 days</b><p>Smells just like the one at the counter. Packaging was tight and nothing leaked.</p><small>Jared M., Cebu City · Bleu de Chanel 100ml</small></div><div class="rev"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><b>Gets compliments every time</b><p>Strong at first, then settles into a sweet vanilla. Easily lasts the whole school day.</p><small>Paolo R., Mandaue · Versace Eros 100ml</small></div><div class="rev"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><b>Great for the heat</b><p>Fresh and clean, and the price was fair. I order it again every few months.</p><small>Kenneth L., Lapu-Lapu · Davidoff Cool Water 125ml</small></div><div class="rev"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><b>Worth the splurge</b><p>Bought it as a gift for my dad. He says it is his best-smelling bottle so far.</p><small>Miguel S., Talisay · Dior Sauvage 100ml</small></div><div class="rev"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><b>Easy office scent</b><p>Not too loud, and people at work noticed it. The seller replied to my messages fast.</p><small>Ryan T., Consolacion · Hugo Boss Bottled 100ml</small></div><div class="rev"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><b>Warm and different</b><p>The ginger and cardamom stand out. Delivery was smooth and the box was in good shape.</p><small>Carlo D., Cebu City · Azzaro Wanted 100ml</small></div></div>
+  <p class="note">These are sample reviews written for the class project.</p>
+</div></section>
+
+<section class="sec" id="about"><div class="wrap">
+  <h2>How ordering works</h2>
+  <p class="lede">This is the business process the website supports, from browsing to delivery.</p>
+  <ol class="steps">
+    <li><b>Choose</b>Browse the shop or a brand, then add a size to your cart.</li>
+    <li><b>Confirm</b>Review the total, apply a promo code, and send your delivery details.</li>
+    <li><b>Receive</b>We pack the order, message you to confirm, and deliver to your address.</li>
+  </ol>
+</div></section>
+
+<section class="sec" style="background:#fff;border-top:1px solid var(--line)"><div class="wrap two">
+  <div>
+    <h2>Get new arrivals first</h2>
+    <p class="lede">Join our email list for restocks and promo codes.</p>
+  </div>
+  <form class="panel" id="news">
+    <label for="email">Email address</label>
+    <input id="email" type="text" placeholder="name@email.com">
+    <p style="margin-top:16px"><button class="btn" type="submit">Subscribe</button></p>
+    <p class="result" id="news-msg" role="status"></p>
+  </form>
+</div></section>
+</main>
+
+<!-- SHOP VIEW -->
+<main id="view-shop" hidden><div class="wrap" style="padding-top:44px;padding-bottom:64px">
+  <h2>Men's Fragrance</h2>
+  <p class="lede">Search by brand or name, filter by scent family, and sort by price.</p>
+  <div class="bar">
+    <div class="chips">
+      <button class="chip on" data-filter="all">All</button>
+      <button class="chip" data-filter="fresh">Fresh</button>
+      <button class="chip" data-filter="woody">Woody</button>
+      <button class="chip" data-filter="spicy">Spicy</button>
+      <button class="chip" data-filter="sweet">Sweet</button>
+      <button class="chip" data-filter="aromatic">Aromatic</button>
+    </div>
+    <input id="search" type="search" placeholder="Search brand or name" aria-label="Filter results">
+    <select id="sort" aria-label="Sort by">
+      <option value="featured">Featured</option>
+      <option value="low">Price: low to high</option>
+      <option value="high">Price: high to low</option>
+    </select>
+  </div>
+  <p class="hint" id="result-count"></p>
+  <div class="grid" id="grid"></div>
+</div></main>
+
+<!-- PRODUCT VIEW -->
+<main id="view-product" hidden><div class="wrap" style="padding-top:26px;padding-bottom:64px">
+  <p class="crumbs"><a href="#home">Home</a> / <a href="#shop" data-family="all">Men's Fragrance</a></p>
+  <div id="product-box"></div>
+</div></main>
+
+<!-- CART VIEW -->
+<main id="view-cart" hidden>
+<div class="wrap narrow" style="padding-top:40px;padding-bottom:40px">
+  <h2 class="center">Cart</h2>
+  <div id="cart-body"></div>
+  <div id="cart-foot" hidden>
+    <div class="cfoot">
+      <div><label for="note">Add order note</label><textarea id="note" placeholder="How can we help you?"></textarea></div>
+      <div class="ctot">
+        <p class="tline">Total: <strong id="cart-total"></strong></p>
+        <p class="hint">Tax included and shipping calculated at checkout</p>
+        <button class="btn dark" id="go-checkout" type="button">CHECKOUT</button>
+        <p class="hint">You need to log in to check out.</p>
+      </div>
+    </div>
+    <div class="estimate">
+      <h3>Estimate shipping</h3>
+      <div class="est-row">
+        <select id="country" aria-label="Country"><option>Philippines</option></select>
+        <select id="prov" aria-label="Province"><option>Cebu</option><option>Metro Manila</option><option>Bohol</option><option>Davao del Sur</option><option>Pampanga</option><option>Iloilo</option><option>Negros Oriental</option><option>Leyte</option><option>Laguna</option><option>Cavite</option><option>Batangas</option><option>Pangasinan</option></select>
+        <input id="zip" placeholder="Zip code" aria-label="Zip code">
+        <button class="btn dark" id="estimate" type="button">ESTIMATE</button>
+      </div>
+      <p class="hint" id="est-msg"></p>
+    </div>
+  </div>
+</div>
+<div style="background:#fff;border-top:1px solid var(--line)"><div class="wrap perks">
+  <div><b>Fast, free delivery</b>Metro areas: 3-7 days. Provinces: 4-10 days.</div>
+  <div><b>Friendly support</b>Customer service Monday to Friday, 9am to 5pm.</div>
+  <div><b>Secure payments</b>COD, GCash, debit or credit card, online banking.</div>
+</div></div>
+</main>
+
+<!-- LOGIN VIEW -->
+<main id="view-login" hidden><div class="wrap" style="max-width:460px;padding-top:44px;padding-bottom:64px">
+  <h2 class="center">Account</h2>
+  <p class="hint center" id="login-note"></p>
+  <div class="panel">
+    <div class="tabs"><button class="tab on" data-tab="login" type="button">Log in</button><button class="tab" data-tab="reg" type="button">Create account</button></div>
+    <form id="login-form">
+      <label for="l-email">Email</label><input id="l-email" type="text" autocomplete="username">
+      <label for="l-pw">Password</label><input id="l-pw" type="password" autocomplete="current-password">
+      <p style="margin-top:16px"><button class="btn dark wide" type="submit">Log in</button></p>
+    </form>
+    <form id="reg-form" hidden>
+      <label for="r-name">Full name</label><input id="r-name" type="text">
+      <label for="r-email">Email</label><input id="r-email" type="text">
+      <label for="r-pw">Password (at least 6 characters)</label><input id="r-pw" type="password">
+      <label for="r-pw2">Confirm password</label><input id="r-pw2" type="password">
+      <p style="margin-top:16px"><button class="btn dark wide" type="submit">Create account</button></p>
+    </form>
+    <p class="result" id="login-msg" role="status"></p>
+    <p class="hint">Demo accounts for a class project, saved in this browser only. Don't use a real password.</p>
+  </div>
+</div></main>
+
+<!-- CHECKOUT VIEW -->
+<main id="view-checkout" hidden>
+<div class="co-head"><div class="co-in"><a href="#cart" class="co-back">&#8249; Cart</a><img id="co-logo" alt="Savant"><span></span></div></div>
+<div class="co-sumbar"><div class="co-in"><button id="sum-toggle" type="button" class="lnk blue">Order summary <span id="sum-arrow">&#9662;</span></button><strong id="co-total-top"></strong></div></div>
+<div class="co-in co-body">
+  <div id="co-items" class="co-items" hidden></div>
+  <div id="co-main">
+    <form id="pay-form" novalidate>
+      <div class="co-h"><h3>Contact</h3><span class="hint" id="co-user"></span></div>
+      <input id="c-email" type="text" placeholder="Email" aria-label="Email">
+      <label class="chk"><input type="checkbox" checked> Email me with news and offers</label>
+
+      <h3>Delivery</h3>
+      <select id="c-country" aria-label="Country"><option>Philippines</option></select>
+      <div class="two-in"><input id="c-fn" placeholder="First name" aria-label="First name"><input id="c-ln" placeholder="Last name" aria-label="Last name"></div>
+      <input id="c-addr" class="ship-in" placeholder="&quot;Complete Address&quot; to avoid shipping delay." aria-label="Address">
+      <input id="c-brgy" placeholder="Barangay" aria-label="Barangay">
+      <div class="two-in"><input id="c-zip" placeholder="Postal code" aria-label="Postal code"><input id="c-city" class="ship-in" placeholder="City" aria-label="City"></div>
+      <select id="c-region" aria-label="Region"><option>Cebu</option><option>Metro Manila</option><option>Bohol</option><option>Davao del Sur</option><option>Pampanga</option><option>Iloilo</option><option>Negros Oriental</option><option>Leyte</option><option>Laguna</option><option>Cavite</option><option>Batangas</option><option>Pangasinan</option></select>
+      <input id="c-phone" placeholder="Phone" aria-label="Phone">
+      <label class="chk"><input type="checkbox"> Save this information for next time</label>
+
+      <h4>Shipping method</h4>
+      <div class="ship-box" id="ship-box">Enter your shipping address to view available shipping methods.</div>
+
+      <h3>Payment</h3>
+      <p class="hint" style="margin-top:0">All transactions are secure and encrypted.</p>
+      <div class="payopts">
+        <label class="payopt"><input type="radio" name="pay" value="card" checked> <span>Credit card</span><em>VISA &middot; Mastercard</em></label>
+        <div id="card-fields" class="card-fields">
+          <input id="c-card" placeholder="Card number" inputmode="numeric" autocomplete="off" aria-label="Card number">
+          <div class="two-in"><input id="c-exp" placeholder="Expiration date (MM/YY)" autocomplete="off" aria-label="Expiration date"><input id="c-cvc" placeholder="Security code" inputmode="numeric" autocomplete="off" aria-label="Security code"></div>
+          <input id="c-cardname" placeholder="Name on card" aria-label="Name on card">
+        </div>
+        <label class="payopt"><input type="radio" name="pay" value="paymongo"> <span>Secure Payments via PayMongo</span><em>GCash &middot; Maya &middot; more</em></label>
+        <label class="payopt"><input type="radio" name="pay" value="cod"> <span>Cash On Delivery Nationwide (COD)</span></label>
+      </div>
+      <p class="hint">Demo checkout for a class project. Nothing is charged, so don't enter a real card number.</p>
+
+      <button class="chipbtn" id="disc-btn" type="button">&#127991; Add discount</button>
+      <div id="disc-row" class="inline" hidden><input id="promo" placeholder="Discount code" aria-label="Discount code"><button class="btn ghost" id="apply" type="button">Apply</button></div>
+      <p class="hint" id="promo-msg">Try SAVANT10 for 10% off.</p>
+
+      <div class="co-total"><div><b>Total</b><small id="co-count"></small></div><strong><small>PHP</small> <span id="co-total"></span></strong></div>
+      <p class="result" id="co-msg" role="alert"></p>
+      <button class="btn dark wide pay" type="submit">Pay now</button>
+    </form>
+  </div>
+  <div id="co-done" hidden><div id="co-done-body"></div></div>
+</div>
+</main>
+
+<div class="meander"></div>
+<footer>
+  <div class="wrap">
+    <div><h4>Need help?</h4>Monday to Friday, 9am to 5pm<br>Email: hello@savant.example<br>Add your group's contact details here</div>
+    <div><h4>Shop</h4><a href="#shop" data-family="all">Men's Fragrance</a><a href="#best">Best Sellers</a><a href="#brands">Brands</a><a href="#cart">Cart</a></div>
+    <div><h4>Support</h4><a href="#about">How ordering works</a><a href="#reviews">Customer reviews</a><a href="#home">Home</a></div>
+  </div>
+  <div class="legal">&copy; Savant. School project for Event-Driven Programming. Brand names belong to their owners.</div>
+</footer>
+<div id="toast" role="status"></div>
+
+<script type="mpy" src="py/main.py"></script>
+</body>
+</html>

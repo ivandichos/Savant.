@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Create account | Savant</title>
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/auth.css">
+</head>
+<body data-page="signup">
+<div class="auth">
+
+  <aside class="auth-art">
+    <img src="assets/login-perfume.png" alt="Savant perfume bottle">
+    <h1>SAVANT</h1>
+    <p>Discover your signature scent</p>
+  </aside>
+
+  <main class="auth-form">
+    <div class="box">
+      <a class="back" href="index.html">&#8249; Back to shop</a>
+      <a class="brand" href="index.html"><img src="assets/logo.png" alt="Savant"></a>
+
+      <h2>Create account</h2>
+      <p class="sub">Join Savant to check out faster.</p>
+      <p id="form-msg" class="msg" role="status"></p>
+
+      <form id="signup-form" novalidate>
+        <div class="field">
+          <label for="name">Full name</label>
+          <input id="name" type="text" autocomplete="name" placeholder="Juan Dela Cruz">
+          <span class="err" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input id="email" type="email" autocomplete="email" placeholder="you@example.com">
+          <span class="err" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <div class="input-wrap">
+            <input id="password" type="password" autocomplete="new-password">
+            <button class="toggle" type="button" data-target="password" aria-label="Show password">Show</button>
+          </div>
+          <div class="meter"><span id="meter-bar"></span></div>
+          <div class="meter-text" id="meter-text">Use at least 8 characters with a letter and a number.</div>
+          <span class="err" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="confirm">Confirm password</label>
+          <div class="input-wrap">
+            <input id="confirm" type="password" autocomplete="new-password">
+            <button class="toggle" type="button" data-target="confirm" aria-label="Show password">Show</button>
+          </div>
+          <span class="err" role="alert"></span>
+        </div>
+        <div class="field">
+          <label class="check"><input id="terms" type="checkbox"> <span>I agree to the terms of use and privacy policy.</span></label>
+          <span class="err" role="alert"></span>
+        </div>
+        <button class="btn" type="submit">Create account</button>
+      </form>
+
+      <p class="switch">Already have an account? <a href="login.html">Log in</a></p>
+      <p class="note">Demo accounts for a class project, saved in this browser only. Don't use a real password.</p>
+    </div>
+  </main>
+
+</div>
+<script src="js/auth.js"></script>
+</body>
+</html>
