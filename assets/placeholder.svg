@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 210" role="img" aria-label="Product photo placeholder">
+<rect width="200" height="210" fill="#f3ece0"/>
+<rect x="8" y="8" width="184" height="194" fill="none" stroke="#b5843e" stroke-width="1.5" stroke-dasharray="6 5"/>
+<g fill="none" stroke="#8a5f1e" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<rect x="62" y="68" width="76" height="58" rx="5"/>
+<circle cx="82" cy="86" r="6"/>
+<path d="M62 118l24-22 18 16 12-10 22 18"/>
+</g>
+<text x="100" y="152" text-anchor="middle" font-family="Georgia,serif" font-size="13" font-weight="600" fill="#0b1d36">Product photo</text>
+<text x="100" y="170" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#5d6675">Add image in assets/products/</text>
+</svg>
